@@ -1,0 +1,23 @@
+C:\Users\steven\Documents\ddr with fbt\bin\Debug\net7.0\ddr with fbt.exe
+C:\Users\steven\Documents\ddr with fbt\bin\Debug\net7.0\ddr with fbt.deps.json
+C:\Users\steven\Documents\ddr with fbt\bin\Debug\net7.0\ddr with fbt.runtimeconfig.json
+C:\Users\steven\Documents\ddr with fbt\bin\Debug\net7.0\ddr with fbt.dll
+C:\Users\steven\Documents\ddr with fbt\bin\Debug\net7.0\ddr with fbt.pdb
+C:\Users\steven\Documents\ddr with fbt\obj\Debug\net7.0\ddr with fbt.csproj.AssemblyReference.cache
+C:\Users\steven\Documents\ddr with fbt\obj\Debug\net7.0\ddr with fbt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\steven\Documents\ddr with fbt\obj\Debug\net7.0\ddr with fbt.AssemblyInfoInputs.cache
+C:\Users\steven\Documents\ddr with fbt\obj\Debug\net7.0\ddr with fbt.AssemblyInfo.cs
+C:\Users\steven\Documents\ddr with fbt\obj\Debug\net7.0\ddr with fbt.csproj.CoreCompileInputs.cache
+C:\Users\steven\Documents\ddr with fbt\obj\Debug\net7.0\ddr with fbt.dll
+C:\Users\steven\Documents\ddr with fbt\obj\Debug\net7.0\refint\ddr with fbt.dll
+C:\Users\steven\Documents\ddr with fbt\obj\Debug\net7.0\ddr with fbt.pdb
+C:\Users\steven\Documents\ddr with fbt\obj\Debug\net7.0\ddr with fbt.genruntimeconfig.cache
+C:\Users\steven\Documents\ddr with fbt\obj\Debug\net7.0\ref\ddr with fbt.dll
+C:\Users\steven\Documents\ddr with fbt\bin\Debug\net7.0\openvr_api.dll
+C:\Users\steven\Documents\ddr with fbt\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\steven\Documents\ddr with fbt\bin\Debug\net7.0\OVRSharp.dll
+C:\Users\steven\Documents\ddr with fbt\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\steven\Documents\ddr with fbt\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\steven\Documents\ddr with fbt\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\steven\Documents\ddr with fbt\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\steven\Documents\ddr with fbt\obj\Debug\net7.0\ddr with fbt.csproj.CopyComplete
