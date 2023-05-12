@@ -7,3 +7,5 @@ i don't want to buy a ddr pad
 
 * amount complete 
 currently it gets the positions of the first 2 trackers that are connected and prints out the position matrix
+
+also it places a picture of osu in the middle of your playspace lol
