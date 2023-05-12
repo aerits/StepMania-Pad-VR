@@ -1,0 +1,9 @@
+* why
+
+i don't want to buy a ddr pad 
+
+- this project is to make a vr "pad" to press the arrow keys
+- in theory it should be able to not only work with full body trackers but also with your controllers 
+
+* amount complete 
+currently it gets the positions of the first 2 trackers that are connected and prints out the position matrix
