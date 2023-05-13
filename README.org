@@ -13,3 +13,13 @@ currently it gets the positions of the first 2 trackers that are connected and p
 /image of a position matrix graphed with viewData.py/
 
 also it places a picture of osu in the middle of your playspace lol
+
+|       | column 1 | column 2 | column 3 | column 4 (position)             |
+|-------+----------+----------+----------+---------------------------------|
+| row 1 | ???      | ???      | ???      | either x or z, negative is left |
+| row 2 | ???      | ???      | ???      | y                               |
+| row 3 | ???      | ???      | ???      | x or z, negative is forwards    |
+
+/table showing the value in mDeviceToAbsoluteTracking field in the struct TrackedDevicePose_t actually are/
+
+as you can see i have no idea what most of the numbers are. i assume one of the columns is rotation but after that i have no guesses to what the others are. i really don't understand where i am supposed to find out what these are lol. maybe i was supposed to find that out from some math class in college (i am a highschool student)

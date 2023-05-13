@@ -73,6 +73,7 @@ array = np.rot90(array)
 # valve variable names
 for i in range(12):
     plt.plot(array[i], label=str(i+1))
+
 # show line names
 leg = plt.legend(loc='upper right')
 plt.show()
