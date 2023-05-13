@@ -5,8 +5,8 @@ It's designed to be played with the game [https://www.stepmania.com/](stepmania)
 
 # How to run
 1. Clone the repository / download the source code
-2. Go into =bin\Debug\net7.0= inside of =StepMania-Pad-VR=
-3. Run the binary named =ddr pad vr.exe=
+2. Go into `bin\Debug\net7.0` inside of `StepMania-Pad-VR`
+3. Run the binary named `ddr pad vr.exe`
 
 # why
 
