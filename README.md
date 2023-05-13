@@ -32,7 +32,7 @@ i don't want to buy a ddr pad
 
 # data for future reference
 
-!(up and down.png)
+![image](https://github.com/aerits/StepMania-Pad-VR/blob/master/up%20and%20down.png?raw=true)
 
 *image of a position matrix graphed with viewData.py, numbers are valves m variables from [mDeviceToAbsoluteTracking](https://valvesoftware.github.io/steamvr_unity_plugin/api/Valve.VR.TrackedDevicePose_t.html#Valve_VR_TrackedDevicePose_t_mDeviceToAbsoluteTracking) with 1 added to them*
 
