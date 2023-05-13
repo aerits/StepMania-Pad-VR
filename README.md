@@ -44,9 +44,10 @@ also it places a picture of osu in the middle of your playspace lol
 | row 2 | ??? m4   | ??? m5   | ??? m6   | y m7                               |
 | row 3 | ??? m8   | ??? m9   | ??? m10  | x or z, negative is forwards m11   |
 
-/table showing what the values in mDeviceToAbsoluteTracking actually are as far as i know/
+*table showing what the values in mDeviceToAbsoluteTracking actually are as far as i know*
 
 as you can see i have no idea what most of the numbers are. i assume one of the columns is rotation but after that i have no guesses to what the others are. i really don't understand where i am supposed to find out what these are lol. maybe i was supposed to find that out from some math class in college (i am a highschool student)
 
-(pad image is taken from [here](https://thetrashman.deviantart.com/art/Custom-DDR-Pad-design-251557032))
+(pad image is taken from [here](https://the
+trashman.deviantart.com/art/Custom-DDR-Pad-design-251557032))
 
