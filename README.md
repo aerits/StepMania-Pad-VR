@@ -7,6 +7,7 @@ It's designed to be played with the game [https://www.stepmania.com/](stepmania)
 1. Clone the repository / download the source code
 2. Go into `bin\Debug\net7.0` inside of `StepMania-Pad-VR`
 3. Run the binary named `ddr pad vr.exe`
+4. Create a shortcut if you want to
 
 # why
 
@@ -31,9 +32,9 @@ i don't want to buy a ddr pad
 
 # data for future reference
 
-![graph](./up and down.png)
+![graph](up and down.png)
 
-/image of a position matrix graphed with viewData.py, numbers are valves m variables from [https://valvesoftware.github.io/steamvr_unity_plugin/api/Valve.VR.TrackedDevicePose_t.html#Valve_VR_TrackedDevicePose_t_mDeviceToAbsoluteTracking](mDeviceToAbsoluteTracking) with 1 added to them/
+*image of a position matrix graphed with viewData.py, numbers are valves m variables from [https://valvesoftware.github.io/steamvr_unity_plugin/api/Valve.VR.TrackedDevicePose_t.html#Valve_VR_TrackedDevicePose_t_mDeviceToAbsoluteTracking](mDeviceToAbsoluteTracking) with 1 added to them*
 
 also it places a picture of osu in the middle of your playspace lol
 
