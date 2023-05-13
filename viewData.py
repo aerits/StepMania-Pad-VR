@@ -3,18 +3,20 @@ import matplotlib.pyplot as plt
 import numpy as np
 import re
 
+# count lines
 with open('output.txt') as f:
     line_count = 0
     for line in f:
         line_count += 1
 
 # open file containing position matrix from main.cs
-data = open(r"C:\Users\steven\Documents\ddr with fbt\output.txt")
+data = open("output.txt")
 
-#array = np.empty(335)
+# init array of zeroes with each column containing m1 --> m12 from openvr
 array = np.zeros([line_count,12])
 
-
+# for a given string, return that string up until a space or } by recursively
+# iterating through each character until a character is a space or }
 def subsString(string):
     if(string[0] == " "):
         return ""
@@ -23,6 +25,8 @@ def subsString(string):
     else:
         return string[0] + subsString(string[1:])
 
+# recursively iterate through a string
+# if it sees m1 --> m12, add that to the array
 def formatData(d, array):
     if(len(d) == 0):
         return ""
@@ -53,32 +57,23 @@ def formatData(d, array):
         elif(tmp == "M34"):
             array[11] = float(subsString(d[4:]))
         return d[0] + formatData(d[1:], array)
-    
-def addToArray():
-    tmp = data.readline()
-    if(tmp == ""):
-        return 0
-    else:
-        for i in range(12):
-            formatData(tmp, array[i])
-    return addToArray()
-
+# iterate through each line of the text file with
+# position data to add all data to the array
 for i in range(line_count):
     tmp = data.readline()
     formatData(tmp, array[i])
-    print(array)
 
-# addToArray()
-# print(array)
-
+# rotate the array clockwise so that each column is a row
+# m1 m2 m3         m1 m1 m1
+# m1 m2 m3 ... ->  m2 m2 m2 ...
+# m1 m2 m3         m3 m3 m3
 array = np.fliplr(array)
 array = np.rot90(array)
-
+# plot each line with pyplot and label them with the
+# valve variable names
 for i in range(12):
     plt.plot(array[i], label=str(i+1))
-
-# plt.plot(array[3], label=str(3))
-
+# show line names
 leg = plt.legend(loc='upper right')
 plt.show()
 
