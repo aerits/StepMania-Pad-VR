@@ -1,11 +1,11 @@
 * why
 
-i don't want to buy a ddr pad 
+i don't want to buy a ddr pad
 
 - this project is to make a vr "pad" to press the arrow keys
-- in theory it should be able to not only work with full body trackers but also with your controllers 
+- in theory it should be able to not only work with full body trackers but also with your controllers
 
-* amount complete 
+* amount complete
 currently it gets the positions of the first 2 trackers that are connected and prints out the position matrix
 
 [[./up and down.png]]
@@ -23,3 +23,37 @@ also it places a picture of osu in the middle of your playspace lol
 /table showing the value in mDeviceToAbsoluteTracking field in the struct TrackedDevicePose_t actually are/
 
 as you can see i have no idea what most of the numbers are. i assume one of the columns is rotation but after that i have no guesses to what the others are. i really don't understand where i am supposed to find out what these are lol. maybe i was supposed to find that out from some math class in college (i am a highschool student)
+
+(pad image is taken from [[https://thetrashman.deviantart.com/art/Custom-DDR-Pad-design-251557032][here]])
+
+
+
+
+* probably not readable on github after formatting
+notes to figure out the numbers for the areas on the pad
+
+		      |d	    |
+		      |	     |	    |
+		      |b     |a	   c|
+	   -----------+------+------+-----------
+		      |      |      |
+		      |	     |	    |
+	      --------+------+------+-----
+		      |	     |	    |
+		      |	     |	    |
+	    ----------+------+------+-----------
+		      |	     |	    |
+		      |	     |	    |
+		      |		    |
+
+middle-of-pad = 0 => middle-of-pad: 0
+		      
+padwidth = 1 => padwidth: 1
+panelwidth = padwidth/3 => panelwidth: 0.333333333333
+
+a = - panelwidth/2  => a: -0.166666666667
+c = panelwidth / 2 => c: 0.166666666667
+d = -.5 => d: -0.5
+b = - panelwidth / 2 => b: -0.166666666667
+
+up arrow corner points: (-0.16, -0.16), (0.16, 0.16) 

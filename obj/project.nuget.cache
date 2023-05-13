@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Iu8qOA4kOh2yzco5KzKlrYYn816EguLsOonOIygcgRmtlLL1YmdDJMDQvEwDtHNoF/DB0wGILwNCBDBWp/GqBQ==",
+  "dgSpecHash": "TiwGg//BnicR/z026DqgKlMi5DPCnV7LKcMAhwNXZquq+J+w91iGcBy8ph6i5Byb0AYVkdArVf6GykLDjXTITQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\steven\\Documents\\ddr with fbt\\ddr with fbt.csproj",
+  "projectFilePath": "c:\\Users\\steven\\Documents\\ddr with fbt\\ddr with fbt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\steven\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\steven\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",

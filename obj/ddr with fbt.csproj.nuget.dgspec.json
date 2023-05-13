@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\steven\\Documents\\ddr with fbt\\ddr with fbt.csproj": {}
+    "c:\\Users\\steven\\Documents\\ddr with fbt\\ddr with fbt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\steven\\Documents\\ddr with fbt\\ddr with fbt.csproj": {
+    "c:\\Users\\steven\\Documents\\ddr with fbt\\ddr with fbt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\steven\\Documents\\ddr with fbt\\ddr with fbt.csproj",
+        "projectUniqueName": "c:\\Users\\steven\\Documents\\ddr with fbt\\ddr with fbt.csproj",
         "projectName": "ddr with fbt",
-        "projectPath": "C:\\Users\\steven\\Documents\\ddr with fbt\\ddr with fbt.csproj",
+        "projectPath": "c:\\Users\\steven\\Documents\\ddr with fbt\\ddr with fbt.csproj",
         "packagesPath": "C:\\Users\\steven\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\steven\\Documents\\ddr with fbt\\obj\\",
+        "outputPath": "c:\\Users\\steven\\Documents\\ddr with fbt\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\steven\\AppData\\Roaming\\NuGet\\NuGet.Config"
