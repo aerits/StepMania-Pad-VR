@@ -66,18 +66,18 @@ public class MyCoolOverlay : Overlay {
     // create matrix
     matrix[0, 0] = rValue[c].mDeviceToAbsoluteTracking.m0;
     matrix[0, 1] = rValue[c].mDeviceToAbsoluteTracking.m1;
-    matrix[0, 2] = -rValue[c].mDeviceToAbsoluteTracking.m2;
+    matrix[0, 2] = rValue[c].mDeviceToAbsoluteTracking.m2;
     matrix[0, 3] = rValue[c].mDeviceToAbsoluteTracking.m3;
 
     matrix[1, 0] = rValue[c].mDeviceToAbsoluteTracking.m4;
     matrix[1, 1] = rValue[c].mDeviceToAbsoluteTracking.m5;
-    matrix[1, 2] = -rValue[c].mDeviceToAbsoluteTracking.m6;
+    matrix[1, 2] = rValue[c].mDeviceToAbsoluteTracking.m6;
     matrix[1, 3] = rValue[c].mDeviceToAbsoluteTracking.m7;
 
-    matrix[2, 0] = -rValue[c].mDeviceToAbsoluteTracking.m8;
-    matrix[2, 1] = -rValue[c].mDeviceToAbsoluteTracking.m9;
+    matrix[2, 0] = rValue[c].mDeviceToAbsoluteTracking.m8;
+    matrix[2, 1] = rValue[c].mDeviceToAbsoluteTracking.m9;
     matrix[2, 2] = rValue[c].mDeviceToAbsoluteTracking.m10;
-    matrix[2, 3] = -rValue[c].mDeviceToAbsoluteTracking.m11;
+    matrix[2, 3] = rValue[c].mDeviceToAbsoluteTracking.m1;
     return matrix;
   }
 }

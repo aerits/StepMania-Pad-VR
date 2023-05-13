@@ -14,10 +14,14 @@ public class MyCoolApp : Application {
         Console.WriteLine("gaming");
         a.Show();
 
+        string createText = "";
+
         while(true){
-            Console.WriteLine(a.getFeetPos(0));
+            createText = createText + a.getFeetPos(0).ToString() + Environment.NewLine;
+            Console.Write(createText);
+            File.WriteAllText("C:/Users/steven/Documents/ddr with fbt/output.txt", createText);
             System.Threading.Thread.Sleep(1000);
-        }
+	}
     }
 
 }
