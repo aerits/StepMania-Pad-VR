@@ -1,26 +1,26 @@
-* StepMania Pad VR
+# StepMania Pad VR
 This is a project to recreate a DDR pad in vr.
 
-It's designed to be played with the game [[https://www.stepmania.com/][stepmania]] or its derivatives: [[https://www.noti.tg/][NotITG]], [[https://etternaonline.com][etterna]], and many others. It does this by simulating arrow key presses and sending that to the game.
+It's designed to be played with the game [https://www.stepmania.com/](stepmania) or its derivatives: [https://www.noti.tg/](NotITG), [https://etternaonline.com](etterna), and many others. It does this by simulating arrow key presses and sending that to the game.
 
-* How to run
+# How to run
 1. Clone the repository / download the source code
 2. Go into =bin\Debug\net7.0= inside of =StepMania-Pad-VR=
 3. Run the binary named =ddr pad vr.exe=
 
-* why
+# why
 
 i don't want to buy a ddr pad
 
 - this project is to make a vr "pad" to press the arrow keys
 - in theory it should be able to not only work with full body trackers but also with your controllers
 
-* amount complete
+# amount complete
 - functionality of pressing keys when you step on them in theory works
 - places a pad in the center of your playspace
 - after connecting 2 feet trackers, you can hit the keys in theory
 
-* todo list
+# todo list
 - [ ] add gui
 - [ ] implement stepping on the pad with controllers
 - [ ] allow repositioning of pad
@@ -29,11 +29,11 @@ i don't want to buy a ddr pad
 - [ ] maybe add multiple pad functionality
 - [ ] follow an irl pad? based on vive tracker
 
-* data for future reference
+# data for future reference
 
-[[./up and down.png]]
+![graph](./up and down.png)
 
-/image of a position matrix graphed with viewData.py, numbers are valves m variables from [[https://valvesoftware.github.io/steamvr_unity_plugin/api/Valve.VR.TrackedDevicePose_t.html#Valve_VR_TrackedDevicePose_t_mDeviceToAbsoluteTracking][mDeviceToAbsoluteTracking]] with 1 added to them/
+/image of a position matrix graphed with viewData.py, numbers are valves m variables from [https://valvesoftware.github.io/steamvr_unity_plugin/api/Valve.VR.TrackedDevicePose_t.html#Valve_VR_TrackedDevicePose_t_mDeviceToAbsoluteTracking](mDeviceToAbsoluteTracking) with 1 added to them/
 
 also it places a picture of osu in the middle of your playspace lol
 
@@ -47,5 +47,5 @@ also it places a picture of osu in the middle of your playspace lol
 
 as you can see i have no idea what most of the numbers are. i assume one of the columns is rotation but after that i have no guesses to what the others are. i really don't understand where i am supposed to find out what these are lol. maybe i was supposed to find that out from some math class in college (i am a highschool student)
 
-(pad image is taken from [[https://thetrashman.deviantart.com/art/Custom-DDR-Pad-design-251557032][here]])
+(pad image is taken from [https://thetrashman.deviantart.com/art/Custom-DDR-Pad-design-251557032](here))
 
