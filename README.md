@@ -39,7 +39,7 @@ i don't want to buy a ddr pad
 also it places a picture of osu in the middle of your playspace lol
 
 |       | column 1 | column 2 | column 3 | column 4 (position)                |
-|-------+----------+----------+----------+------------------------------------|
+|:------|:---------|:---------|:---------|:-----------------------------------|
 | row 1 | ??? m0   | ??? m1   | ??? m2   | either x or z, negative is left m3 |
 | row 2 | ??? m4   | ??? m5   | ??? m6   | y m7                               |
 | row 3 | ??? m8   | ??? m9   | ??? m10  | x or z, negative is forwards m11   |
