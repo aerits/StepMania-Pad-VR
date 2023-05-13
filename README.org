@@ -21,13 +21,13 @@ i don't want to buy a ddr pad
 - after connecting 2 feet trackers, you can hit the keys in theory
 
 * todo list
-** TODO add gui
-** TODO implement stepping on the pad with controllers
-** TODO allow repositioning of pad
-** TODO animate pad
-** TODO allow hiding the pad
-** TODO maybe add multiple pad functionality
-** TODO follow an irl pad? based on vive tracker
+[ ] add gui
+[ ] implement stepping on the pad with controllers
+[ ] allow repositioning of pad
+[ ] animate pad
+[ ] allow hiding the pad
+[ ] maybe add multiple pad functionality
+[ ] follow an irl pad? based on vive tracker
 
 * data for future reference
 
