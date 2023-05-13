@@ -21,3 +21,4 @@ C:\Users\steven\Documents\ddr with fbt\bin\Debug\net7.0\runtimes\win\lib\netcore
 C:\Users\steven\Documents\ddr with fbt\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\steven\Documents\ddr with fbt\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\steven\Documents\ddr with fbt\obj\Debug\net7.0\ddr with fbt.csproj.CopyComplete
+c:\Users\steven\Documents\ddr with fbt\bin\Debug\net7.0\WindowsInput.dll

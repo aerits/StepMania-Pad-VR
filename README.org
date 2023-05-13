@@ -1,3 +1,13 @@
+* StepMania Pad VR
+This is a project to recreate a DDR pad in vr.
+
+It's designed to be played with the game [[https://www.stepmania.com/][stepmania]] or its derivatives: [[https://www.noti.tg/][NotITG]], [[https://etternaonline.com][etterna]], and many others. It does this by simulating arrow key presses and sending that to the game.
+
+* How to run
+1. Clone the repository / download the source code
+2. Go into =bin\Debug\net7.0= inside of =StepMania-Pad-VR=
+3. Run the binary named =ddr pad vr.exe=
+
 * why
 
 i don't want to buy a ddr pad
@@ -6,7 +16,20 @@ i don't want to buy a ddr pad
 - in theory it should be able to not only work with full body trackers but also with your controllers
 
 * amount complete
-currently it gets the positions of the first 2 trackers that are connected and prints out the position matrix
+- functionality of pressing keys when you step on them in theory works
+- places a pad in the center of your playspace
+- after connecting 2 feet trackers, you can hit the keys in theory
+
+* todo list
+** TODO add gui
+** TODO implement stepping on the pad with controllers
+** TODO allow repositioning of pad
+** TODO animate pad
+** TODO allow hiding the pad
+** TODO maybe add multiple pad functionality
+** TODO follow an irl pad? based on vive tracker
+
+* data for future reference
 
 [[./up and down.png]]
 
@@ -26,34 +49,3 @@ as you can see i have no idea what most of the numbers are. i assume one of the 
 
 (pad image is taken from [[https://thetrashman.deviantart.com/art/Custom-DDR-Pad-design-251557032][here]])
 
-
-
-
-* probably not readable on github after formatting
-notes to figure out the numbers for the areas on the pad
-
-		      |d	    |
-		      |	     |	    |
-		      |b     |a	   c|
-	   -----------+------+------+-----------
-		      |      |      |
-		      |	     |	    |
-	      --------+------+------+-----
-		      |	     |	    |
-		      |	     |	    |
-	    ----------+------+------+-----------
-		      |	     |	    |
-		      |	     |	    |
-		      |		    |
-
-middle-of-pad = 0 => middle-of-pad: 0
-		      
-padwidth = 1 => padwidth: 1
-panelwidth = padwidth/3 => panelwidth: 0.333333333333
-
-a = - panelwidth/2  => a: -0.166666666667
-c = panelwidth / 2 => c: 0.166666666667
-d = -.5 => d: -0.5
-b = - panelwidth / 2 => b: -0.166666666667
-
-up arrow corner points: (-0.16, -0.16), (0.16, 0.16) 

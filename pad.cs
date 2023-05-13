@@ -43,7 +43,7 @@ public class Pad
         switch (c)
         {
             case 0:
-                e = "forward";
+                e = "forward";
                 sim.Keyboard.KeyPress(VirtualKeyCode.UP);
 		break;
             case 1:
