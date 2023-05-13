@@ -10,15 +10,15 @@ currently it gets the positions of the first 2 trackers that are connected and p
 
 [[./up and down.png]]
 
-/image of a position matrix graphed with viewData.py/
+/image of a position matrix graphed with viewData.py, numbers are valves m variables from [[https://valvesoftware.github.io/steamvr_unity_plugin/api/Valve.VR.TrackedDevicePose_t.html#Valve_VR_TrackedDevicePose_t_mDeviceToAbsoluteTracking][mDeviceToAbosluteTracking]] with 1 added to them/
 
 also it places a picture of osu in the middle of your playspace lol
 
-|       | column 1 | column 2 | column 3 | column 4 (position)             |
-|-------+----------+----------+----------+---------------------------------|
-| row 1 | ???      | ???      | ???      | either x or z, negative is left |
-| row 2 | ???      | ???      | ???      | y                               |
-| row 3 | ???      | ???      | ???      | x or z, negative is forwards    |
+|       | column 1 | column 2 | column 3 | column 4 (position)                |
+|-------+----------+----------+----------+------------------------------------|
+| row 1 | ??? m0   | ??? m1   | ??? m2   | either x or z, negative is left m3 |
+| row 2 | ??? m4   | ??? m5   | ??? m6   | y m7                               |
+| row 3 | ??? m8   | ??? m9   | ??? m10  | x or z, negative is forwards m11   |
 
 /table showing the value in mDeviceToAbsoluteTracking field in the struct TrackedDevicePose_t actually are/
 
