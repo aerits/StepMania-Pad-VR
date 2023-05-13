@@ -1,7 +1,7 @@
 # StepMania Pad VR
 This is a project to recreate a DDR pad in vr.
 
-It's designed to be played with the game [https://www.stepmania.com/](stepmania) or its derivatives: [https://www.noti.tg/](NotITG), [https://etternaonline.com](etterna), and many others. It does this by simulating arrow key presses and sending that to the game.
+It's designed to be played with the game [stepmania](https://www.stepmania.com/) or its derivatives: [NotITG](https://www.noti.tg/), [etterna](https://etternaonline.com), and many others. It does this by simulating arrow key presses and sending that to the game.
 
 # How to run
 1. Clone the repository / download the source code
@@ -34,7 +34,7 @@ i don't want to buy a ddr pad
 
 ![graph](up and down.png)
 
-*image of a position matrix graphed with viewData.py, numbers are valves m variables from [https://valvesoftware.github.io/steamvr_unity_plugin/api/Valve.VR.TrackedDevicePose_t.html#Valve_VR_TrackedDevicePose_t_mDeviceToAbsoluteTracking](mDeviceToAbsoluteTracking) with 1 added to them*
+*image of a position matrix graphed with viewData.py, numbers are valves m variables from [mDeviceToAbsoluteTracking](https://valvesoftware.github.io/steamvr_unity_plugin/api/Valve.VR.TrackedDevicePose_t.html#Valve_VR_TrackedDevicePose_t_mDeviceToAbsoluteTracking) with 1 added to them*
 
 also it places a picture of osu in the middle of your playspace lol
 
