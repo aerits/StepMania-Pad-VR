@@ -48,5 +48,5 @@ also it places a picture of osu in the middle of your playspace lol
 
 as you can see i have no idea what most of the numbers are. i assume one of the columns is rotation but after that i have no guesses to what the others are. i really don't understand where i am supposed to find out what these are lol. maybe i was supposed to find that out from some math class in college (i am a highschool student)
 
-(pad image is taken from [https://thetrashman.deviantart.com/art/Custom-DDR-Pad-design-251557032](here))
+(pad image is taken from [here](https://thetrashman.deviantart.com/art/Custom-DDR-Pad-design-251557032))
 
