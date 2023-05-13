@@ -16,7 +16,7 @@ public class MyCoolOverlay : Overlay {
         // pad size
         WidthInMeters = 1f;
 	
-        // overlay transformation
+        // overlay transformation
         float radians = (float)((Math.PI / 180) * 90); // 90 degrees to radians
 	var rotation = Matrix4x4.CreateRotationX(radians); // Lay the overlay flat by rotating it by 90 degrees
 	var translation = Matrix4x4.CreateTranslation(0, 0, 0); // Raise the overlay one meter above the ground
@@ -38,10 +38,13 @@ public class MyCoolOverlay : Overlay {
                     Console.WriteLine("yooo gaming");
                 }
 	    }
-	}
-	
+	}
+
+        string path = "pad.jpg";
+        string fullPath = System.IO.Path.GetFullPath(path);
+
         // Set overlay from png
-        SetTextureFromFile("C:/Users/steven/Documents/ddr with fbt/pad.jpg");
+        SetTextureFromFile(fullPath);
     }
 
     // returns position matrix of specified tracker c
@@ -55,7 +58,7 @@ public class MyCoolOverlay : Overlay {
 	TrackedDevicePose_t[] rValue = new TrackedDevicePose_t[OpenVR.k_unMaxTrackedDeviceCount];
 	// rValue[0] = new TrackedDevicePose_t[5]; // init first row
 	// rValue[1] = new TrackedDevicePose_t[5]; // init second row
-	Console.WriteLine(rValue);
+	// Console.WriteLine(rValue);
 
 	OpenVR.System.GetDeviceToAbsoluteTrackingPose(origin, 0, rValue);
 	OpenVR.System.GetDeviceToAbsoluteTrackingPose(origin, 0, rValue);
@@ -86,43 +89,42 @@ public class MyCoolOverlay : Overlay {
     }
 
     // run this every frame
-    public void updateFeetPos(){
-        foot1pos = getPos(footTrackers[0]);
-        foot2pos = getPos(footTrackers[1]);
+    public void updateFeetPos(){
+        foot1pos = getPos(footTrackers[0]);
+        foot2pos = getPos(footTrackers[1]);
     }
 
-    // check if feet are on ground
-    public bool isFootOnGround(int c){
-        double threshHold = 0.01;
-	
+
+    public bool isFootOnGround(int c){
+        double threshHold = 0.01;
 	
 	// check if feet are under 0.2
 	if(foot1pos[1,3] <= threshHold)
-	{
-	    Console.WriteLine("foot 1 is on the floor");
-	    if(c == 1){
-		return true;
+	{
+	    // Console.WriteLine("foot 1 is on the floor");
+	    if(c == 1){
+		return true;
 	    }
 	}
 	if(foot2pos[1,3] <= threshHold)
-	{
-	    Console.WriteLine("foot 2 is on the floor");
-	    if(c==2){
-                return true;
+	{
+	    // Console.WriteLine("foot 2 is on the floor");
+	    if(c==2){
+                return true;
             }
-	}
-        return false;
+	}
+        return false;
     }
 
     public bool isFootInCircle(int c, double[] point, double radius)
-    {
-        return trackerDistanceToPoint(c, point) < radius;
+    {
+        return trackerDistanceToPoint(c, point) < radius;
     }
 
     // checks tracker distance to a point at x: point[0] y: point[1]
     public double trackerDistanceToPoint(int c, double[] point)
-    {
+    {
 	// simple pythagorean theorem
-        return Math.Sqrt(Math.Abs(Math.Pow((foot1pos[0, 3] - point[0]), 2) + Math.Pow((foot1pos[2, 3] - point[1]), 2)));
+        return Math.Sqrt(Math.Abs(Math.Pow((foot1pos[0, 3] - point[0]), 2) + Math.Pow((foot1pos[2, 3] - point[1]), 2)));
     }
 }

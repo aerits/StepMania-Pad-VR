@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="InputSimulator" Version="1.0.4" />
     <PackageReference Include="OVRSharp" Version="1.2.0" />
   </ItemGroup>
 

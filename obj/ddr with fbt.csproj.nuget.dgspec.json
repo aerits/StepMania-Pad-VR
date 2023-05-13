@@ -38,6 +38,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "InputSimulator": {
+              "target": "Package",
+              "version": "[1.0.4, )"
+            },
             "OVRSharp": {
               "target": "Package",
               "version": "[1.2.0, )"
