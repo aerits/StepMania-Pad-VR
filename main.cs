@@ -8,7 +8,7 @@ Console.ReadLine();
 public class MyCoolApp : Application {
     Pad a;
     public MyCoolApp() : base(ApplicationType.Overlay){
-        Console.WriteLine("hit enter when you go to desired place to put stepmania pad...");
+        Console.WriteLine("hit enter to start program");
         Console.ReadLine();
         a = new Pad();
         while (true)

@@ -12,7 +12,7 @@ public class MyCoolOverlay : Overlay {
     public Matrix4x4 foot2pos;
 
     public MyCoolOverlay() : base("my_cool_overlay", "StepMania Pad", false)
-    {
+    {
         // pad size
         WidthInMeters = 1f;
 	
@@ -29,7 +29,7 @@ public class MyCoolOverlay : Overlay {
 
 	int counter = 0;
 	for( uint i = 0; i < OpenVR.k_unMaxTrackedDeviceCount; i++ ){
-	    if(OpenVR.System.IsTrackedDeviceConnected(i)){
+	    if(OpenVR.System.TrackedDeviceConnected(i)){
 		Console.WriteLine(OpenVR.System.GetTrackedDeviceClass(i));
 		ETrackedDeviceClass t = ETrackedDeviceClass.GenericTracker;
 		if(OpenVR.System.GetTrackedDeviceClass(i) == t){
@@ -38,11 +38,11 @@ public class MyCoolOverlay : Overlay {
                     Console.WriteLine("yooo gaming");
                 }
 	    }
-	}
-
+	}
+
         string path = "pad.jpg";
         string fullPath = System.IO.Path.GetFullPath(path);
-
+
         // Set overlay from png
         SetTextureFromFile(fullPath);
     }
@@ -96,7 +96,7 @@ public class MyCoolOverlay : Overlay {
 
 
     public bool isFootOnGround(int c){
-        double threshHold = 0.01;
+        double threshHold = 0.05;
 	
 	// check if feet are under 0.2
 	if(foot1pos[1,3] <= threshHold)
@@ -124,7 +124,17 @@ public class MyCoolOverlay : Overlay {
     // checks tracker distance to a point at x: point[0] y: point[1]
     public double trackerDistanceToPoint(int c, double[] point)
     {
-	// simple pythagorean theorem
-        return Math.Sqrt(Math.Abs(Math.Pow((foot1pos[0, 3] - point[0]), 2) + Math.Pow((foot1pos[2, 3] - point[1]), 2)));
+        // simple pythagorean theorem
+        // first math.pow is x of the tracker - x of the point
+        // second one is the z of the tracker - z of the point
+	
+        // if statement for which foot
+        if (c < 1)
+        {
+	    return Math.Sqrt(Math.Abs(Math.Pow((foot1pos[0, 3] - point[0]), 2) + Math.Pow((foot1pos[2, 3] - point[1]), 2)));
+        } else
+        {
+            return Math.Sqrt(Math.Abs(Math.Pow((foot2pos[0, 3] - point[0]), 2) + Math.Pow((foot2pos[2, 3] - point[1]), 2)));
+        }
     }
 }

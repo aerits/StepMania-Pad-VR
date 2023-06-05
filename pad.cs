@@ -7,10 +7,12 @@ public class Pad
     private double padSize;
     private double[][] panels;
     private InputSimulator sim;
+    private double[] padPos;
 
-    public Pad()
-    {
+    public Pad(double x, double y)
+    {
         sim = new InputSimulator();
+        padPos = new double[2] { x, y };
         padSize = 0.3;
         panels = new double[4][];
         panels[0] = new double[2] { 0, -0.33 };
@@ -26,18 +28,18 @@ public class Pad
         checkFeetOnPad();
 	System.Threading.Thread.Sleep(10);
     }
-    public void checkFeetOnPad()
+    private void checkFeetOnPad()
     {
         if (a.isFootOnGround(0) || a.isFootOnGround(1))
         {
             for (int i = 0; i < 4; i++)
-                if (a.isFootInCircle(0, panels[i], padSize))
+                if (a.isFootInCircle(0, panels[i], padSize) || a.isFootInCircle(1, panels[i], padSize))
                 {
                     pressKey(i);
 		}
 	}
     }
-    public string pressKey(int c)
+    private string pressKey(int c)
     {
         string e;
         switch (c)
