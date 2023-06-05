@@ -10,7 +10,7 @@ public class MyCoolApp : Application {
     public MyCoolApp() : base(ApplicationType.Overlay){
         Console.WriteLine("hit enter to start program");
         Console.ReadLine();
-        a = new Pad();
+        a = new Pad(0, 0);
         while (true)
         {
             a.update();

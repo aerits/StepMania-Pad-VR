@@ -29,7 +29,7 @@ public class MyCoolOverlay : Overlay {
 
 	int counter = 0;
 	for( uint i = 0; i < OpenVR.k_unMaxTrackedDeviceCount; i++ ){
-	    if(OpenVR.System.TrackedDeviceConnected(i)){
+	    if(OpenVR.System.IsTrackedDeviceConnected(i)){
 		Console.WriteLine(OpenVR.System.GetTrackedDeviceClass(i));
 		ETrackedDeviceClass t = ETrackedDeviceClass.GenericTracker;
 		if(OpenVR.System.GetTrackedDeviceClass(i) == t){
@@ -129,12 +129,13 @@ public class MyCoolOverlay : Overlay {
         // second one is the z of the tracker - z of the point
 	
         // if statement for which foot
-        if (c < 1)
+        if (c == 0 )
         {
 	    return Math.Sqrt(Math.Abs(Math.Pow((foot1pos[0, 3] - point[0]), 2) + Math.Pow((foot1pos[2, 3] - point[1]), 2)));
-        } else
+        } else if( c == 1)
         {
-            return Math.Sqrt(Math.Abs(Math.Pow((foot2pos[0, 3] - point[0]), 2) + Math.Pow((foot2pos[2, 3] - point[1]), 2)));
+	    return Math.Sqrt(Math.Abs(Math.Pow((foot2pos[0, 3] - point[0]), 2) + Math.Pow((foot2pos[2, 3] - point[1]), 2)));
         }
+        return -1.0;
     }
 }

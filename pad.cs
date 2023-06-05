@@ -15,10 +15,11 @@ public class Pad
         padPos = new double[2] { x, y };
         padSize = 0.3;
         panels = new double[4][];
-        panels[0] = new double[2] { 0, -0.33 };
-        panels[1] = new double[2] { 0, 0.33 };
-        panels[2] = new double[2] { 0.33, 0 };
-        panels[3] = new double[2] { -0.33, 0 };
+	// TODO add rotation (https://wikiless.org/wiki/Rotation_matrix?lang=en)
+        panels[0] = new double[2] { 0+x, -0.33+y };
+        panels[1] = new double[2] { 0+x, 0.33+y };
+        panels[2] = new double[2] { 0.33+x, 0+y };
+        panels[3] = new double[2] { -0.33+x, 0+y };
         a = new MyCoolOverlay();
         a.Show();
     }
@@ -35,7 +36,8 @@ public class Pad
             for (int i = 0; i < 4; i++)
                 if (a.isFootInCircle(0, panels[i], padSize) || a.isFootInCircle(1, panels[i], padSize))
                 {
-                    pressKey(i);
+		    Console.WriteLine("keypress incoming");
+		    pressKey(i);
 		}
 	}
     }
